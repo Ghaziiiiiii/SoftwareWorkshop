@@ -12,7 +12,7 @@ on the worksheet is translated to Java.
 The total capital computed after 1, 2, 3, 4, 5 and 500 years.
 
 @author Mohd. Ghazanfar
-@version 23-07-2018 | Last Changed:
+@version 23-07-2018 | Last Changed: 23rd July, 2018
 
  */
 public class Capital {
@@ -37,9 +37,11 @@ public class Capital {
         double capitalSum = 100;
         double interestRate = 2.3;
 
-        for (int i=0; i < 5; i++) {
+        // for loop used to print statement for the first-five years
+        for (int i=1; i <= 5; i++) {
             System.out.println(interestToString(capitalSum, interestRate, i));
-
         }
+        // print statement for the 500th year
+        System.out.println(interestToString(100,2.3,500));
     }
 }
