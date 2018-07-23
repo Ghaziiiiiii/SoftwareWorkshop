@@ -6,8 +6,23 @@ A capital of $ 100 is invested at a fixed interest rate of
 total = capital * (1 + 0.01 * interest rate)^years
 to print the balance after each of the first 5 years and after 500 years.
 
+In this exercise, the variables are declared and initialized, then the formula
+on the worksheet is translated to Java.
+
+The total capital computed after 1, 2, 3, 4, 5 and 500 years.
+
+@author Mohd. Ghazanfar
+@version 23-07-2018 | Last Changed:
+
  */
 public class Capital {
+    /*
+     * Takes the current capital, interest rate and number of years and
+     * @param capitalSum    The capital involved
+     * @param interestRate  The interest rate
+     * @param years         The number of years of the investment
+     * @return              The final capital (incl. interest earned)
+     */
     public static double interestAddedCapitalSum(double capitalSum, double interestRate, int years) {
         return capitalSum * Math.pow(1.0 + 0.01 * interestRate, years);
     }
